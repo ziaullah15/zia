@@ -12,7 +12,7 @@ import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.6.2";
 
 // 0. Import wagmi dependencies
 const { polygonMumbai } = WagmiCoreChains;
-const { signMessage, Address, configureChains, createConfig, getContract, getAccount, fetchBalance, readContract, writeContract, erc721ABI } = WagmiCore;
+const { signMessage, Address, configureChains, createConfig, getContract, getAccount, fetchBalance,getWalletClient, readContract, writeContract, erc721ABI } = WagmiCore;
 
 // 1. Define chains
 const chains = [polygonMumbai];
@@ -61,12 +61,10 @@ const signButton = document.getElementById('signButton');
 signButton.addEventListener('click', async () => {
     try {
         // Sign the message when the button is clicked
-        const signature = await signMessage({
-            message: 'gm wagmi frens',
-        });
+        const walletClient = await getWalletClient()
 
         // Log the signature to the console (you can do something else with it)
-        console.log('Signature:', signature);
+        console.log('Signer:', walletClient);
     } catch (error) {
         // Handle errors here
         console.error('Error:', error);

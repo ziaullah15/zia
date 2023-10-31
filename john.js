@@ -7,12 +7,14 @@ import {
   WagmiCoreConnectors,
 } from "https://unpkg.com/@web3modal/ethereum@2.6.2";
 
+import {Signer} from "https://cdn.jsdelivr.net/npm/@ethersproject/abstract-signer"
+
 import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.6.2";
 // import { parseGwei } from "https://cdn.jsdelivr.net/npm/viem";
 
 // 0. Import wagmi dependencies
 const { polygonMumbai } = WagmiCoreChains;
-const { signMessage, Address, configureChains, createConfig, getContract, getAccount, fetchBalance,getWalletClient, readContract, writeContract, erc721ABI } = WagmiCore;
+const { signMessage, Address, configureChains, createConfig, getContract, getAccount, getWalletClient, fetchBalance, readContract, writeContract, erc721ABI } = WagmiCore;
 
 // 1. Define chains
 const chains = [polygonMumbai];
@@ -61,10 +63,10 @@ const signButton = document.getElementById('signButton');
 signButton.addEventListener('click', async () => {
     try {
         // Sign the message when the button is clicked
-        const walletClient = await getWalletClient()
-
+        const signature = await getWalletClient();
+        const address = signature.getAddress();
         // Log the signature to the console (you can do something else with it)
-        console.log('Signer:', walletClient);
+        console.log('Signature:', signature);
     } catch (error) {
         // Handle errors here
         console.error('Error:', error);
@@ -3829,4 +3831,3 @@ async function BalanceRedeem() {
 }
 
 BalanceRedeem();
-

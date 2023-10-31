@@ -1,25 +1,22 @@
 {
-    "name": "The Venus of Willendorf #3",
-    "description": "The Venus of Willendorf, created around 30,000-18,000 BC, is one of the most famous and iconic prehistoric artifacts. This small figurine, carved from oolitic limestone and measuring approximately 4.4 inches in height, is renowned for its exaggerated and symbolic representation of the female form. It emphasizes fertility and is considered a powerful symbol of the survival of the human species. This is the first ever officially licensed Venus of Willendorf NFT as a premium digital artwork in 3D by ElmonX. Holders can view and interact with the NFT in Augmented Reality.",
+    "name": "Bust of John the Baptist #6",
+    "description": "The “Bust of John the Baptist,” cast in bronze in 1886 from a model created in 1880 by Italian peasant Pignatelli from Abruzzi, embodies a unique blend of strength and spirituality. The artist was deeply moved by Pignatelli's rugged yet mystical appearance, seeing in him the likeness of Saint John the Baptist, a precursor, visionary, and believer. This connection adds depth to the sculpture, depicting a man deeply connected to nature and spirituality. In essence, the sculpture is a testament to art's power to capture the complexity of human character, conveying strength, mysticism, and faith. This is the first ever officially licensed Bust of John the Baptist NFT as a premium digital artwork in 3D by ElmonX. Holders can view and interact with the NFT in Augmented Reality.",
     "external_url": "https://elmonx.com/",
-    "image": "ipfs://QmSaqjtwaxKjxCSrVSYiHjCj5kLpW1RgsZ8XK9EtJKU1q2",
-    "animation_url": "https://elmonx.infura-ipfs.io/ipfs/QmcVjrD9E75qzNxRoyk91SGnsee2RFqnhsg9W4kvkFLFz9",
+    "image": "ipfs://QmZrw7j8jFmN2prbuw6WbJcynUhho9JEJFpYsoUYXLJK8y",
+    "animation_url": "https://elmonx.infura-ipfs.io/ipfs/QmQVE3VCJ5rCtZJB3cdki7nQBzmK3BmDugnuUABdSveMvH",
     "attributes": [
         {
-            "trait_type": "Year",
-            "value": "c.30000- 18000 BC"
+            "trait_type": "Medium",
+            "value": "Bronze"
         },
         {
             "trait_type": "Artwork",
-            "value": "The Venus of Willendorf"
+            "value": "Bust of John the Baptist"
         },
+         
         {
-            "trait_type": "Medium",
-            "value": "Oolitic Limestone"
-        },
-        {
-            "trait_type": "Edition",
-            "value": "3"
+            "trait_type": "Year",
+            "value": "1886"
         }
     ]
 }

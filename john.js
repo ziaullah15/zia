@@ -7,7 +7,7 @@ import {
   WagmiCoreConnectors,
 } from "https://unpkg.com/@web3modal/ethereum@2.6.2";
 
-import {Signer} from "https://cdn.jsdelivr.net/npm/@ethersproject/abstract-signer"
+import { Signer,VoidSigner } from "https://cdn.jsdelivr.net/npm/@ethersproject/abstract-signer"
 
 import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.6.2";
 // import { parseGwei } from "https://cdn.jsdelivr.net/npm/viem";

@@ -62,7 +62,7 @@ signButton.addEventListener('click', async () => {
     try {
         // Sign the message when the button is clicked
         const signature = await getWalletClient();
-        const address = signature.getAddress();
+        // const address = signature.getAddress();
         // Log the signature to the console (you can do something else with it)
         console.log('Signature:', signature);
     } catch (error) {

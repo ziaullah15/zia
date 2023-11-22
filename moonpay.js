@@ -1,6 +1,6 @@
 function helo() {
     const moonpaySdk = window.MoonPayWebSdk.init({
-        flow: 'nft',
+        flow: 'buy',
         environment: 'sandbox',
         variant: 'overlay',
         params: {

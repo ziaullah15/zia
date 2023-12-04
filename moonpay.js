@@ -5,7 +5,7 @@ function helo() {
         variant: 'overlay',
         params: {
           apiKey: 'pk_test_9l5tjCkdWZ66fgEOtLJ2wih6Zg3t4DeE',
-          contractAddress: '0x28Aa3f5FF8C171dCF7E1F5aF03A8E1C1c3411c73',
+          contractAddress: '0xD28f604CE3152177B4265c902c29f6c69F11A7AB',
           tokenId: '1'
         }
       });

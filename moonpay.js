@@ -1,4 +1,7 @@
 function helo() {
+
+        console.log("hiiiiiiiiiii");
+
     const moonpaySdk = window.MoonPayWebSdk.init({
         flow: 'nft',
         environment: 'sandbox',
@@ -25,7 +28,6 @@ function helo() {
     // widget.
     moonpaySdk.updateSignature(data.signature);
 
-    console.log("hiiiiiiiiiii");
 
     moonpaySdk.show();
 }

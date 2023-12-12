@@ -9,6 +9,9 @@ function helo() {
           tokenId: '1',
           dynamicAssetInfo: 'true'
         }
+        
+      });
+
         const urlForSignature = moonpaySdk.generateUrlForSigning();
 
 // The URL for signature should be sent to your backend, which should then
@@ -22,8 +25,6 @@ const data = await response.json();
 // Once you have the signature, you can update the SDK with it and show the
 // widget.
 moonpaySdk.updateSignature(data.signature);
-        
-      });
 
       console.log("hiiiiiiiiiii")
 

@@ -9,24 +9,23 @@ function helo() {
           tokenId: '1',
           dynamicAssetInfo: 'true'
         }
-        
-      });
+    });
 
-        const urlForSignature = moonpaySdk.generateUrlForSigning();
+    const urlForSignature = moonpaySdk.generateUrlForSigning();
 
-// The URL for signature should be sent to your backend, which should then
-// sign it with your API secret and return the signature.
-const response = await fetch("/sign-url", {
-  method: "POST",
-  body: JSON.stringify({ urlForSignature }),
-});
-const data = await response.json();
+    // The URL for the signature should be sent to your backend, which should then
+    // sign it with your API secret and return the signature.
+    const response = await fetch("/sign-url", {
+        method: "POST",
+        body: JSON.stringify({ urlForSignature }),
+    });
+    const data = await response.json();
 
-// Once you have the signature, you can update the SDK with it and show the
-// widget.
-moonpaySdk.updateSignature(data.signature);
+    // Once you have the signature, you can update the SDK with it and show the
+    // widget.
+    moonpaySdk.updateSignature(data.signature);
 
-      console.log("hiiiiiiiiiii")
+    console.log("hiiiiiiiiiii");
 
-      moonpaySdk.show()
+    moonpaySdk.show();
 }

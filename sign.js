@@ -12,7 +12,7 @@ app.post('/sign-url', (req, res) => {
         const urlForSignature = req.body.urlForSignature;
 
         // Replace 'your_api_secret' with your actual API secret
-        const apiSecret = 'your_api_secret';
+        const apiSecret = 'sk_test_9c8T5Mm9C32wvhpWMNA6PgZm7F5gxyqo';
 
         // Perform the signature using the API secret
         const signature = crypto.createHmac('sha256', apiSecret).update(urlForSignature).digest('hex');

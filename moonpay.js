@@ -20,10 +20,10 @@ async function helo() {
     });
 
     const urlForSignature = moonpaySdk.generateUrlForSigning();
-    console.log("url",urlForSignature)
+    console.log("url:---",urlForSignature)
     // The URL for the signature should be sent to your backend, which should then
     // sign it with your API secret and return the signature.
-    const response = await fetch("https://buy-sandbox.moonpay.com/nft?apiKey=pk_test_9l5tjCkdWZ66fgEOtLJ2wih6Zg3t4DeE/sign-url", {
+    const response = await fetch("https://api-dev.vtail.com/api/moonpay/getSignature", {
         method: "POST",
         body: JSON.stringify({ urlForSignature }),
     });

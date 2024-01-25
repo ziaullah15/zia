@@ -1,0 +1,45 @@
+<!-- Test: npx http-server -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <style>
+      model-viewer{
+        width: 100%;
+        height:100%;
+        margin:0 auto;
+      }
+
+      /* Apply flexbox layout to the container */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+  padding: 20px; /* Add spacing around the buttons */
+}
+
+.container{
+width: 360.984px !important; height: 332.984px !important;
+}
+    </style>
+
+    <!-- Get some bootstrap default styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <title>ElmonX | Snowball Warming | 3D & AR Viewer</title>
+  </head>
+  <body>
+    <div class="button-container">
+  <w3m-core-button></w3m-core-button>
+  <button id="web3" style="width: 160px; height: 40px; border-radius: 30px;">Reveal NFT</button>
+</div>
+
+
+    <script src="snowglobe.js" type="module"></script>
+  </body>
+</html>

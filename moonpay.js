@@ -11,7 +11,7 @@ async function helo() {
         debug: true,
         flow: 'nft',
         environment: 'sandbox',
-        variant: 'newTab',
+        variant: 'overlay',
         params: {
           apiKey: 'pk_test_9l5tjCkdWZ66fgEOtLJ2wih6Zg3t4DeE',
           contractAddress: '0x65603C5bc4bb1aD489F63C91d19D8c58722c2e7e',          

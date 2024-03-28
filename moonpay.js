@@ -14,10 +14,10 @@ async function helo() {
         variant: 'overlay',
         params: {
           apiKey: 'pk_test_9l5tjCkdWZ66fgEOtLJ2wih6Zg3t4DeE',
-          contractAddress: '0xb769E1754C3587C533c3A01F3f2A9b0FD025a8da',          
+          contractAddress: '0x124e99Ab8b0B28A5362F46AEC043d43d78970B73',          
           tokenId: '_0',
           metadata: {
-            moonpayCollectionId: 'c6baba98-7d69-4502-ba43-7e0cf3579f68',
+            moonpayCollectionId: '74ca5dd7-57b5-40c2-9444-7de4f949f379',
         }
         }
     });

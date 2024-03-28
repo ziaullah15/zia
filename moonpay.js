@@ -17,7 +17,7 @@ async function helo() {
           contractAddress: '0x124e99Ab8b0B28A5362F46AEC043d43d78970B73',          
           tokenId: '_0',
           metadata: {
-            moonpayCollectionId: '74ca5dd7-57b5-40c2-9444-7de4f949f379',
+            moonpayCollectionId: '1153695d-b340-414d-b194-192fc097ef67',
         }
         }
     });

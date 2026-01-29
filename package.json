@@ -1,12 +1,21 @@
 {
-  "name": "zia",
+  "name": "connectwallet",
   "version": "1.0.0",
-  "type": "module",
-  "description": "",
-  "main": "apiCall.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@reown/appkit": "^1.8.17",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@reown/appkit-adapter-wagmi": "^1.8.17",
+    "viem": "^2.45.0",
+    "wagmi": "^3.4.1"
+  }
 }
